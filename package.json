@@ -1,0 +1,26 @@
+{
+  "name": "@visualkit/coverage",
+  "version": "0.0.0",
+  "description": "Visualkit UI Coverage",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc"
+  },
+  "keywords": [
+    "protorians",
+    "visualkit",
+    "coverage"
+  ],
+  "author": "Y. Yannick GOBOU",
+  "repository": {
+    "url": "https://github.com/protorians/visualkit-coverage.git"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@protorians/widgets": "^0.0.6",
+    "@visualkit/core": "^0.0.0",
+    "@visualkit/progress": "^0.0.0",
+    "typescript": "5.4.5"
+  }
+}

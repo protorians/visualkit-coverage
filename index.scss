@@ -1,0 +1,58 @@
+@use "@visualkit/core/library/kit";
+@use "@visualkit/core/library/extends";
+
+$kit: "coverage";
+
+@layer kit {
+
+  body {
+
+  }
+
+  @include kit.set($kit) {
+    --flex-direction: column;
+    --justify-content: center;
+    --align-items: center;
+    @extend %flex-direction;
+    @extend %justify-content;
+    @extend %align-items;
+
+    position: fixed;
+    inset: 0;
+    color: var(--theme-text, #000);
+    background-color: var(--color-untint, #FFF);
+
+
+    @include kit.child($kit, 'indicator') {
+      --flex-direction: row;
+      --justify-content: center;
+      @extend %flex-direction;
+      @extend %justify-content;
+
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+
+    @include kit.child($kit, 'progress') {
+      max-width: 480px;
+      width: calc(100% - 2rem);
+      margin: 1rem;
+      height: 7px;
+      border-radius: 2rem;
+      overflow: hidden;
+      background-color: rgba(0, 0, 0, .07);
+    }
+
+    @include kit.child($kit, 'track') {
+      width: 0;
+      min-width: 1%;
+      height: 100%;
+      border-radius: inherit;
+      background-color: var(--color-one, #000000);
+      transition: width 360ms ease;
+    }
+
+  }
+}

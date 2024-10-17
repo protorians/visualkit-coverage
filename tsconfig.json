@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "declaration": true,
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "allowJs": false,
+    "removeComments": false,
+    "declarationMap": true,
+    "inlineSources": true,
+    "sourceMap": true,
+    "preserveConstEnums": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "module": "ES2022",
+    "noEmit": true,
+    "outDir": "./build"
+  },
+  "exclude": [
+    "node_modules",
+    "./build"
+  ],
+  "include": [
+    "./"
+  ]
+}
